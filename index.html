@@ -275,4 +275,295 @@
             font-size: 1rem;
         }
 
-        .bkash { background-color: #e2136
+        .bkash { background-color: #e2136e; }
+        .nagad { background-color: #f6921e; }
+        .rocket { background-color: #8c3494; }
+        .banglalink { background-color: #f26522; }
+
+        /* Contact & Location */
+        .contact-section {
+            background-color: #e2e8f0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .info-box {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        .info-item i {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-top: 4px;
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--primary);
+            font-size: 1.05rem;
+        }
+
+        .info-item span, .info-item a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1.05rem;
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-wa {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--whatsapp);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 0.95rem;
+        }
+
+        footer strong {
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+            .mfs-banner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-laptop-code"></i> লিমন <span>ডিজিটাল জোন</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#services">আমাদের সেবাসমূহ</a></li>
+                <li><a href="#banking">মোবাইল ব্যাংকিং</a></li>
+                <li><a href="#contact">যোগাযোগ ও ঠিকানা</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>স্বাগতম <span>লিমন ডিজিটাল জোন</span>-এ</h1>
+            <p>সকল প্রকার অনলাইন আবেদন, জরুরি ছবি প্রিন্ট, ফটোকপি, লেমিনেটিং, NID ও ভূমি সেবা এবং মোবাইল ব্যাংকিংয়ের একটি বিশ্বস্ত প্রতিষ্ঠান।</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/8801904980633?text=আসসালামু%20আলাইকুম,%20লিমন%20ডিজিটাল%20জোন%20থেকে%20সেবা%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ মেসেজ দিন
+                </a>
+                <a href="#services" class="btn btn-outline">
+                    <i class="fa-solid fa-list-check"></i> সেবাসমূহ দেখুন
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>আমাদের ডিজিটাল সেবাসমূহ</h2>
+                <p>দ্রুত, নির্ভুল ও যত্নসহকারে সকল কাজ সম্পন্ন করা হয়</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-print"></i></div>
+                    <h3>প্রিন্টিং ও ফটোকপি</h3>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> সাদা-কালো ও রঙিন লেজার প্রিন্ট</li>
+                        <li><i class="fa-solid fa-check"></i> হাই-কোয়ালিটি ফটোকপি ও স্ক্যানিং</li>
+                        <li><i class="fa-solid fa-check"></i> জরুরি পাসপোর্ট ও স্ট্যাম্প সাইজ ছবি</li>
+                        <li><i class="fa-solid fa-check"></i> আইডি কার্ড ও দলিল লেমিনেটিং</li>
+                    </ul>
+                    <a href="https://wa.me/8801904980633?text=প্রিন্টিং%20বা%20ছবি%20প্রিন্ট%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="card-wa-link">
+                        <i class="fa-brands fa-whatsapp"></i> বিস্তারিত জানতে মেসেজ দিন &rarr;
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>অনলাইন আবেদন ও সরকারি সেবা</h3>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> নতুন NID আবেদন ও তথ্য সংশোধন</li>
+                        <li><i class="fa-solid fa-check"></i> ই-নামজারি (Land Mutation) ও খাজনা</li>
+                        <li><i class="fa-solid fa-check"></i> পুলিশ ক্লিয়ারেন্স ও পাসপোর্ট আবেদন</li>
+                        <li><i class="fa-solid fa-check"></i> স্কুল-কলেজ ভর্তি ও চাকরির আবেদন</li>
+                    </ul>
+                    <a href="https://wa.me/8801904980633?text=অনলাইন%20আবেদন%20বা%20সরকারি%20সেবা%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="card-wa-link">
+                        <i class="fa-brands fa-whatsapp"></i> বিস্তারিত জানতে মেসেজ দিন &rarr;
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-word"></i></div>
+                    <h3>কম্পোজ, সিভি ও বিল পেমেন্ট</h3>
+                    <ul class="service-list">
+                        <li><i class="fa-solid fa-check"></i> প্রফেশনাল বায়োডাটা / সিভি (CV) তৈরি</li>
+                        <li><i class="fa-solid fa-check"></i> বাংলা ও ইংরেজি কম্পিউটার কম্পোজ</li>
+                        <li><i class="fa-solid fa-check"></i> পল্লী বিদ্যুৎ বিল পরিশোধ</li>
+                        <li><i class="fa-solid fa-check"></i> ই-মেইল পাঠানো ও ডকুমেন্ট ডাউনলোড</li>
+                    </ul>
+                    <a href="https://wa.me/8801904980633?text=সিভি%20তৈরি%20বা%20বিদ্যুৎ%20বিল%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="card-wa-link">
+                        <i class="fa-brands fa-whatsapp"></i> বিস্তারিত জানতে মেসেজ দিন &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Banking Highlight -->
+            <div class="mfs-banner" id="banking">
+                <div>
+                    <h3 style="font-size: 1.5rem; color: var(--primary); margin-bottom: 5px;">মোবাইল ব্যাংকিং ও রিচার্জ সেবা</h3>
+                    <p style="color: var(--text-muted);">ক্যাশ ইন, ক্যাশ আউট, সেন্ড মানি এবং সকল সিমে ফ্লেক্সিলোড ও এমবি প্যাক</p>
+                </div>
+                <div class="mfs-badges">
+                    <span class="badge bkash">বিকাশ (bKash)</span>
+                    <span class="badge nagad">নগদ (Nagad)</span>
+                    <span class="badge rocket">রকেট (Rocket)</span>
+                    <span class="badge banglalink">বাংলালিংক রিটেইল</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>যোগাযোগ ও দোকানের ঠিকানা</h2>
+                <p>যেকোনো প্রয়োজনে সরাসরি দোকানে আসুন অথবা হোয়াটসঅ্যাপে যোগাযোগ করুন</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Shop Info -->
+                <div class="info-box">
+                    <h3>দোকানের তথ্য</h3>
+                    <div class="info-item">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div>
+                            <strong>প্রোপ্রাইটর</strong>
+                            <span>মোঃ লিমন আহমেদ</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>ঠিকানা</strong>
+                            <span>হায়দারের মোড়, বীরতারা, ধনবাড়ী, টাঙ্গাইল।</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>খোলা থাকার সময়</strong>
+                            <span>প্রতিদিন সকাল ৮:৩০ মিনিট থেকে রাত ১০:০০ টা পর্যন্ত</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Contact -->
+                <div class="info-box">
+                    <h3>সরাসরি যোগাযোগ</h3>
+                    <div class="info-item">
+                        <i class="fa-brands fa-whatsapp" style="color: var(--whatsapp-dark);"></i>
+                        <div>
+                            <strong>WhatsApp ও মোবাইল নাম্বার</strong>
+                            <span>
+                                <a href="https://wa.me/8801904980633" target="_blank">01904-980633 (WhatsApp)</a><br>
+                                <a href="tel:+8801932338813">01932-338813</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>ই-মেইল</strong>
+                            <span><a href="mailto:mdlimonali143@gmail.com">mdlimonali143@gmail.com</a></span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="https://wa.me/8801904980633?text=হ্যালো%20লিমন%20ভাই,%20আপনার%20দোকানের%20একটি%20কাজ%20সম্পর্কে%20কথা%20বলতে%20চাই।" target="_blank" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+                            <i class="fa-brands fa-whatsapp"></i> সরাসরি WhatsApp-এ কথা বলুন
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8801904980633?text=আসসালামু%20আলাইকুম,%20লিমন%20ডিজিটাল%20জোন%20থেকে%20সেবা%20নিতে%20চাই।" target="_blank" class="floating-wa" title="WhatsApp-এ মেসেজ দিন">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; ২০২৬ <strong>লিমন ডিজিটাল জোন</strong> | সর্বস্বত্ব সংরক্ষিত।</p>
+            <p style="font-size: 0.85rem; margin-top: 5px;">হায়দারের মোড়, বীরতারা, ধনবাড়ী, টাঙ্গাইল</p>
+        </div>
+    </footer>
+
+</body>
+</html>
